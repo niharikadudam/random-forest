@@ -1,0 +1,25 @@
+Bagging (Bootstrap Aggregating):
+Method: Trains multiple models independently on different bootstrapped samples (random subsets with replacement). The final prediction is made by averaging (regression) or majority voting (classification).
+Goal: Reduces variance and helps prevent overfitting.
+Example: Random Forest.
+Boosting:
+Method: Trains models sequentially, each correcting the errors of the previous one. The final prediction is a weighted sum of all models.
+Goal: Reduces bias and improves performance by focusing on difficult cases.
+Example: AdaBoost, Gradient Boosting.
+Key Differences:
+Training Process: Bagging is parallel; Boosting is sequential.
+Focus: Bagging reduces variance; Boosting reduces bias.
+Overfitting: Bagging is less prone to overfitting; Boosting is more prone if too many iterations are used.
+
+==============================================================================================================================
+
+Explain how to handle imbalance in the data.
+Imbalanced data pertains to datasets where the distribution of observations in the target class is uneven.
+Ways to handle Imbalanced Data for Classification
+Addressing imbalanced data in classification is crucial for fair model performance. Techniques include resampling (oversampling or undersampling), synthetic data generation, specialized algorithms, and alternative evaluation metrics. Implementing these strategies ensures more accurate and unbiased predictions across all classes.
+1. Different Evaluation Metric
+2. Resampling (Undersampling and Oversampling)
+3.BalancedBaggingClassifier
+4.Synthetic Data Generation
+5. Threshold Moving
+
